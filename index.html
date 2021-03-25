@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h1>Задание 1</h1>
+        <form action="">
+            <input type="number" id="temperature" value="0">
+            <input type="button" value="Перевести" onclick="farengate()">
+        </form>
+    </div>
+
+    <div>
+        <h1>Задание 2</h1>
+        <p id='answerField'></p>
+    </div>
+
+    <div>
+        <h1>Задание 3</h1>
+        <p id='answerField2'></p>
+        <p>Если хотя бы один операнд - строка, то будет выполняться конкатенация.</p>
+    </div>
+
+    <div>
+        <h1>Задание 4</h1>
+        <p>Скрипты с атрибутом async - не зависят от загрузки страницы и других скриптов.
+            Скрипты с атрибутом defer - выполняются после загрузки страницы и в порядке очереди.</p>
+    </div>
+
+    <script>
+        //Задание 1
+        function farengate() {
+            let temp = document.getElementById("temperature").value;
+            let farTemp = 9 / 5 * temp + 32;
+            alert('Температура по Фаренгейту: ' + farTemp);
+        }
+    </script>
+</body>
+
+</html>
