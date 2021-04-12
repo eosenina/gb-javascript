@@ -1,0 +1,8 @@
+
+.hiddenCart {
+    display: none;
+}
+
+.visibleCart {
+    display: block;
+}
