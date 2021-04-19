@@ -215,7 +215,6 @@ const walls = {
     reduceWallsLife() {
         this.points.forEach(point => {
            point.life--;
-           console.log(point.life);
         });
         this.points = this.points.filter(value => {
             return value.life > 0;
@@ -332,12 +331,9 @@ const game = {
         }
 
         if (this.timeToBuildWall()){
-            console.log('true');
             this.walls.setNewWall(this.getRandomFreeCoordinates());
         }
-        console.log(this.walls);
         this.walls.reduceWallsLife();
-        console.log(this.walls);
         this.snake.makeStep();
         this.render();
     },
